@@ -10,4 +10,10 @@ services:
     build:
       context: bank
 
+  proxy:
+    build:
+      context: nginx
 
+  powerziossh:
+    build:
+      context: powerzio-ssh
