@@ -12,7 +12,7 @@ echo "powerzio.net" | sudo tee "/etc/hostname" > /dev/null
 #Add the localhost with the domain name
 echo "127.0.0.1 powerzio.net" | sudo tee -a "/etc/hosts" > /dev/null
 
-sudo cat "./configs/db.powerzio.net"
+cat ./configs/db.powerzio.net | sudo tee "/etc/bind/db.powerzio.net" > /dev/null
 
 echo \
  "zone \"powerzio.net\" {\
