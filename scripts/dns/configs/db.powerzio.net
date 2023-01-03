@@ -6,9 +6,12 @@ $TTL    604800
                         2419200     ; Expire
                         604800 )    ; Negative Cache TTL
 ;
-@       IN      NS      ns.powerzio.net.
-f       IN      CNAME   files.powzezio.net
-beta-f  IN      CNAME   beta.files.powerzio.net
-g       IN      A       8.8.8.8
-bank    IN      A       8.8.8.8//changeme
-dev     IN      TXT     "hello world"
+@             IN      NS      ns.powerzio.net.
+f             IN      CNAME   files.powzezio.net
+beta-f        IN      CNAME   beta.files.powerzio.net
+g             IN      A       8.8.8.8
+bank          IN      A       127.0.0.1
+files         IN      A       127.0.0.1
+beta.files    IN      A       127.0.0.1
+monitoring    IN      A       127.0.0.1
+dev           IN      TXT     "hello world"
