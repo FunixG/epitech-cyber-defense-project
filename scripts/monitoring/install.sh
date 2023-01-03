@@ -1,4 +1,5 @@
 #!/bin/bash
+#doc https://linuxhandbook.com/cockpit/
 
 #Update system
 sudo apt update -y
