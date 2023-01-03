@@ -2,18 +2,15 @@ version: '3.9'
 
 services:
 
-  dns:
-    build:
-      context: dns
-
   bank:
     build:
       context: bank
+    restart: always
 
   proxy:
     build:
       context: nginx
-
-  powerziossh:
-    build:
-      context: powerzio-ssh
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
