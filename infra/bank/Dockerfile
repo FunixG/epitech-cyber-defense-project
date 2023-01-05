@@ -5,7 +5,9 @@ COPY . .
 
 RUN python -m pip install --upgrade pip
 
-RUN pip3 install flask pyjwt pysqlite3
+RUN pip install flask jwt
+
+#RUN pip install flask pyjwt pysqlite3
 
 CMD ["python3", "./server.py"]
 
