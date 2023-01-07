@@ -4,7 +4,7 @@ FROM nginx
 ADD certification/1670684367.crt /etc/cert/powerzio/1670684367.crt
 ADD certification/super_key.csr /etc/cert/powerzio/super_key.csr
 
-ADD configs/bank.powerzio.net /etc/nginx/sites-available/bank.powerzio.net
+COPY configs/bank.powerzio.net /etc/nginx/sites-available/bank.powerzio.net
 RUN ln -s /etc/nginx/sites-available/bank.powerzio.net /etc/nginx/sites-enabled/bank.powerzio.net
 
 EXPOSE 80
