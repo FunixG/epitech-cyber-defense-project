@@ -36,11 +36,3 @@ iptables -A INPUT -p tcp --dport ssh -m conntrack --ctstate NEW -m recent --upda
 iptables -N port-scanning
 iptables -A port-scanning -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s --limit-burst 2 -j RETURN
 iptables -A port-scanning -j DROP
-
-iptables -P INPUT DROP
-
-iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
-iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
-iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-iptables -I INPUT -p tcp -m tcp --dport 53 -j ACCEPT
-iptables -I INPUT -p tcp -m tcp --dport 9090 -j ACCEPT
