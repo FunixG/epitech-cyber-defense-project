@@ -13,6 +13,7 @@ ADD ./configs/files.powerzio.net /etc/nginx/sites-available/files.powerzio.net
 ADD ./configs/files.powerzio.net /etc/nginx/sites-enabled/files.powerzio.net
 
 RUN mkdir -p /var/project-files
+RUN chown -R www-data:www-data /var/project-files
 
 EXPOSE 80
 EXPOSE 443
