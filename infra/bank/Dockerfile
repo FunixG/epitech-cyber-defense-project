@@ -1,6 +1,8 @@
 #Docker image for bank app
 FROM python:3-alpine
 
+WORKDIR /app
+
 COPY . .
 
 RUN python -m pip install --upgrade pip

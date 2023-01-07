@@ -5,6 +5,8 @@ services:
   bank:
     build:
       context: bank
+    volumes:
+      - ./bank/db.sqlite:/app/db.sqlite
     restart: always
 
   proxy:
