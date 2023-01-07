@@ -11,6 +11,8 @@ server {
     root /var/project-files;
 
     location / {
+        autoindex on;
+        autoindex_exact_size on;
     }
 
     ssl_certificate /etc/cert/powerzio/1670684367.crt;
