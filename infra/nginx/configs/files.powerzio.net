@@ -8,7 +8,7 @@ server {
     listen 443 ssl http2;
     server_name files.powerzio.net;
 
-    root /var/project-files
+    root /var/project-files;
 
     location / {
     }
