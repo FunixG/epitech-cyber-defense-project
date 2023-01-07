@@ -13,6 +13,7 @@ echo "powerzio.net" | sudo tee "/etc/hostname" > /dev/null
 echo "127.0.0.1 powerzio.net" | sudo tee -a "/etc/hosts" > /dev/null
 
 cat ./configs/db.powerzio.net | sudo tee "/etc/bind/db.powerzio.net" > /dev/null
+cat ./configs/db.10 | sudo tee "/etc/bind/db.10" > /dev/null
 
 #Dns principal
 echo \
