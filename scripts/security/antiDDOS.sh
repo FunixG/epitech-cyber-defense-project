@@ -43,3 +43,4 @@ iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 iptables -I INPUT -p tcp -m tcp --dport 22 -j ACCEPT
 iptables -I INPUT -p tcp -m tcp --dport 53 -j ACCEPT
+iptables -I INPUT -p tcp -m tcp --dport 9090 -j ACCEPT
