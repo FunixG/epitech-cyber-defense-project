@@ -27,7 +27,7 @@ echo \
   type master;\
   notify no;
   file \"/etc/bind/db.10\";\
-};" | sudo tee "/etc/bind/named.conf.local"
+};" | sudo tee -a "/etc/bind/named.conf.local"
 
 sudo systemctl restart bind9
 sudo systemctl enable bind9
